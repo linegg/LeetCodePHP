@@ -32,7 +32,7 @@ class L58_LengthOfLastWord
 
         //空格在最后
         if($endIndex == $index){
-            return $this->lengthOfLastWord(rtrim($s));exit();
+            return $this->lengthOfLastWord(rtrim($s));
         }
 
         $i = $endIndex - $index;
