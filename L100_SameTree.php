@@ -54,10 +54,19 @@ class L100_SameTree
     function preOrder($tree,&$treeArr){
         if($tree != null){
             $treeArr[] = $tree->val;
-            $this->preOrder($tree->left,$treeArr);
-            $this->preOrder($tree->right,$treeArr);
-        }else{
-            $treeArr[] = null;
+            if($tree->left || $tree->right){
+                if($tree->left){
+                    $this->preOrder($tree->left,$treeArr);
+                }else{
+                    $treeArr[] = null;
+                }
+
+                if($tree->right){
+                    $this->preOrder($tree->right,$treeArr);
+                }else{
+                    $treeArr[] = null;
+                }
+            }
         }
     }
 }
