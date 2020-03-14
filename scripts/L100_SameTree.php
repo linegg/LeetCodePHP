@@ -38,7 +38,9 @@
  * */
 
 
-require_once './lib/ToolUtil.php';
+namespace app\scripts;
+require_once '../autoload.php';
+use app\lib\ToolUtil;
 class L100_SameTree
 {
     function isSameTree($p, $q) {

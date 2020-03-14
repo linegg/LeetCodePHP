@@ -6,6 +6,8 @@
  * Time: 20:04
  */
 
+namespace app\lib;
+
 class TreeNode
 {
     public $val = null;

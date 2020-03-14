@@ -2,7 +2,7 @@
 /**
  * 链表结构
  */
-
+namespace app\lib;
 class ListNode {
     public $val = 0;
     public $next = null;

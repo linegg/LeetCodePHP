@@ -5,7 +5,7 @@
  * Date: 2020/1/12
  * Time: 17:24
  */
-
+namespace app\lib;
 class BTreeUtil
 {
     //前序遍历 根->左->右

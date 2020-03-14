@@ -22,7 +22,9 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-require_once './lib/ToolUtil.php';
+namespace app\scripts;
+require_once '../autoload.php';
+use app\lib\ToolUtil;
 class L101_SymmetricTree
 {
     /**

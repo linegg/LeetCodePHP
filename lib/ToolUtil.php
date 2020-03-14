@@ -5,8 +5,8 @@
  * Date: 2019/12/1
  * Time: 19:58
  */
-require_once 'ListNode.php';
-require_once 'TreeNode.php';
+
+namespace app\lib;
 
 class ToolUtil
 {
