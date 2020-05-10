@@ -63,4 +63,21 @@ class ToolUtil
 
         return $root;
     }
+
+    public static function listNodeToArray($head,$array = []){
+        if(isset($head->val)){
+            $array[] = $head->val;
+            $head = $head->next;
+            return self::listNodeToArray($head,$array);
+        }
+        return $array;
+    }
+
+    public static function listNodeToStr($head){
+        $arr = self::listNodeToArray($head);
+        if(!empty($arr)){
+            return implode(',',$arr);
+        }
+        return '';
+    }
 }
