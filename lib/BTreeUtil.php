@@ -54,13 +54,13 @@ class BTreeUtil
         if($tree != null){
             if(!is_null($tree->left) || !is_null($tree->right)){
                 if(!is_null($tree->right)){
-                    $this->inorder($tree->right,$treeArr);
+                    $this->postorder($tree->right,$treeArr);
                 }else{
                     $treeArr[] = null;
                 }
                 $treeArr[] = $tree->val;
                 if(!is_null($tree->left)){
-                    $this->inorder($tree->left,$treeArr);
+                    $this->postorder($tree->left,$treeArr);
                 }else{
                     $treeArr[] = null;
                 }

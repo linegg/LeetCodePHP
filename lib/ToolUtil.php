@@ -22,6 +22,7 @@ class ToolUtil
         return $listNode;
     }
 
+    //初始化
     public static function initBinaryNode(string $str)
     {
         $strArr = str_split($str);
